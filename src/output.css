@@ -1319,11 +1319,17 @@
     .sm\:inset-x-8 {
       inset-inline: calc(var(--spacing) * 8);
     }
+    .sm\:flex {
+      display: flex;
+    }
     .sm\:max-w-\[350px\] {
       max-width: 350px;
     }
     .sm\:grid-cols-3 {
       grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .sm\:flex-row {
+      flex-direction: row;
     }
     .sm\:px-8 {
       padding-inline: calc(var(--spacing) * 8);
