@@ -299,6 +299,9 @@
   .gap-\[1rem\] {
     gap: 1rem;
   }
+  .gap-\[1vw\] {
+    gap: 1vw;
+  }
   .gap-\[2rem\] {
     gap: 2rem;
   }
