@@ -7,17 +7,166 @@
     <link href="./src/output.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config={theme:{extend:{colors:{brand:'#F26A1B',soft:'#FFF1E6'},fontFamily:{sans:['Inter','system-ui','sans-serif']}}}}</script>
+    <style>.ul{display:block;width:26px;height:3px;border-radius:9px;background:#F26A1B;margin-top:7px}.ic{width:1.5rem;height:1.5rem;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}</style>
   </head>
   <body class="font-['Poppins'] w-[100vw]">
     <header></header>
 
-    <main>
-      <section></section>
+    <main class="mx-auto max-w-[1100px]">
 
-      <section></section>
+      <section
+        class="grid grid-cols-1 items-center gap-8 px-5 py-8 sm:px-8 md:grid-cols-[1fr,1.15fr] md:gap-10 md:px-12 lg:px-20 lg:py-14">
+
+        <div class="order-1 flex justify-center md:order-2">
+          <img
+            src="./public/imagas/image001.jpeg"
+            alt="Ali Hamza"
+            class="w-full max-w-[280px] rounded-2xl object-cover sm:max-w-[350px] md:max-w-full lg:max-w-[420px]">
+        </div>
+
+        <div
+          class="order-2 text-center md:order-1 md:pl-4 md:text-left lg:pl-8">
+
+          <p
+            class="flex flex-col items-center gap-2 text-[16px] font-bold md:items-start">
+            Hi, I'm
+
+            <svg
+              class="h-2 w-20"
+              viewBox="2 2 100 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2 10 C25 2, 70 1, 60 3"
+                stroke="#F26A1B"
+                stroke-width="3.5"
+                stroke-linecap="round" />
+            </svg>
+          </p>
+
+          <h1
+            class="mt-4 text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl lg:text-[68px]">
+            Ali <span class="text-brand">Hamza</span>
+          </h1>
+
+          <p class="mt-3 text-sm font-semibold text-neutral-700 sm:text-base">
+            Software Engineer &amp; Full-Stack Developer
+          </p>
+
+          <p
+            class="mx-auto mt-5 max-w-[22rem] text-sm leading-6 text-neutral-600 md:mx-0">
+            I build digital products that solve real problems and create
+            meaningful impact. From idea to deployment, I turn complex
+            challenges into simple, beautiful solutions.
+          </p>
+
+          <div
+            class="mt-7 flex flex-wrap justify-center gap-3 md:justify-start">
+            <a href="#work"
+              class="inline-flex items-center gap-2 rounded-lg bg-brand px-5 py-2.5 text-xs font-semibold text-white shadow-md shadow-brand/30 hover:brightness-95">
+              View My Work
+              <svg class="ic !h-4 !w-4"><use href="#" /></svg>
+            </a>
+
+            <a href="#"
+              class="inline-flex items-center gap-2 rounded-lg border border-neutral-300 bg-white px-5 py-2.5 text-xs font-semibold hover:border-brand">
+              Download CV
+              <svg class="ic !h-4 !w-4 text-brand"><use href="#" /></svg>
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+      <section
+        class="grid grid-cols-1 items-center gap-8 px-5 py-8 sm:px-8 md:grid-cols-[1fr,1.15fr] md:gap-10 md:px-12 lg:px-20 lg:py-14">
+        <div>
+          <img src="./public/imagas/image002.jpeg" alt>
+        </div>
+        <div
+          class="flex flex-col items-center gap-2 text-[16px] font-medium md:items-start">
+          <h2 class="text-[19px] font-bold">About Me
+            <svg
+              class="h-2 w-20"
+              viewBox="2 2 100 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2 10 C25 2, 70 1, 60 3"
+                stroke="#F26A1B"
+                stroke-width="3.5"
+                stroke-linecap="round" />
+            </svg>
+          </h2>
+          <p
+            class="mx-[16.5px] mt-5 max-w-[24rem] text-sm leading-6 text-neutral-600 md:mx-0">Passionate
+            about creating clean, efficient and scalable solutions with great
+            user experiences. I love working with technologies that push the web
+            forward.</p>
+          <ul
+            class="mt-7 grid max-w-md grid-cols-2 gap-x-4 gap-y-6 text-[11px] font-semibold sm:grid-cols-3">
+            <li class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="#F26A1B"
+                stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-lightbulb preview-icon"><path
+                  d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path
+                  d="M9 18h6" /><path d="M10 22h4" /></svg>Problem Solver</li>
+            <li class="flex items-center gap-2"><svg
+                xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="#F26A1B"
+                stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-target-arrow preview-icon"><path
+                  d="M19 2v3h3" /><path d="M13.4 10.6 22 2" /><circle cx="12"
+                  cy="12" r="2" /><path d="M12.3 6H12a6 6 0 1 0 6 6v-.3" /><path
+                  d="M15 2.5A9.93 9.93 0 1 0 21.5 9" /><path
+                  d="M5.3 19.4 4 22" /><path
+                  d="M18.7 19.4 20 22" /></svg>Detail Oriented</li>
+            <li class="flex items-center gap-2"><svg
+                xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="#F26A1B"
+                stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-code-xml preview-icon"><path
+                  d="m18 16 4-4-4-4" /><path d="m6 8-4 4 4 4" /><path
+                  d="m14.5 4-5 16" /></svg>Clean Code Advocate</li>
+            <li class="flex items-center gap-2"><svg
+                xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="#F26A1B"
+                stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-book-open-text preview-icon"><path
+                  d="M12 5v16" /><path d="M16 13h2" /><path d="M16 9h2" /><path
+                  d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z" /><path
+                  d="M6 13h2" /><path d="M6 9h2" /></svg>Always Learning</li>
+            <li class="flex items-center gap-2"><svg
+                xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="#F26A1B"
+                stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-user-round-group preview-icon"><path
+                  d="M17 21a5 5 0 00-10 0" /><path
+                  d="M22 10.5a3.5 3.5 0 00-5.507-2.868" /><path
+                  d="M7.507 7.632A3.5 3.5 0 002 10.5" /><circle cx="12" cy="13"
+                  r="3" /><circle cx="18.5" cy="4.5" r="2.5" /><circle cx="5.5"
+                  cy="4.5" r="2.5" /></svg>Team Player</li>
+            <li class="flex items-center gap-2"><svg
+                xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="#F26A1B"
+                stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-brain preview-icon"><path
+                  d="M12 18V5" /><path
+                  d="M15 13a4.17 4.17 0 01-3-4 4.17 4.17 0 01-3 4" /><path
+                  d="M17.707 6.294A3 3 0 1012 5a3 3 0 10-5.707 1.294" /><path
+                  d="M17.996 5.125a4 4 0 012.526 5.77" /><path
+                  d="M18 18a4 4 0 002-7.465" /><path
+                  d="M19.967 17.482a4 4 0 11-7.967.517 4 4 0 11-7.967-.517" /><path
+                  d="M6 18a4 4 0 01-2-7.465" /><path
+                  d="M6.004 5.125a4 4 0 00-2.526 5.77" /></svg>Curious Mind</li>
+          </ul>
+        </div>
+      </section>
 
       <section></section>
 
@@ -25,8 +174,7 @@
         <div class="flex justify-between" py-[2rem]>
           <p class="font-black text-2xl">Selected Work</p>
           <p
-            class="flex justify-center items-center font-bold text-[10px] gap-1"
-          >
+            class="flex justify-center items-center font-bold text-[10px] gap-1">
             View All Projects
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -34,25 +182,21 @@
               height="16"
               fill="currentColor"
               class="bi bi-arrow-right-short"
-              viewBox="0 0 16 16"
-            >
+              viewBox="0 0 16 16">
               <path
                 fill-rule="evenodd"
-                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
-              />
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
             </svg>
           </p>
         </div>
         <div class="px-[2rem]">
           <div class="flex flex-col lg:flex-row lg:justify-around gap-[2rem]">
             <div
-              class="rounded-3xl border-black shadow-lg bg-amber-200 py-[1vh]"
-            >
+              class="rounded-3xl border-black shadow-lg bg-amber-200 py-[1vh]">
               <img
                 class="rounded-t-3xl"
                 src="./public/imagas/mockup_1_desktop_monitor.png"
-                alt=""
-              />
+                alt />
               <div class="bg-[#f3f4f6] rounded-b-2xl py-[2rem] px-[1rem]">
                 <h1 class="flex items-center gap-3 font-bold">
                   BigBrains
@@ -66,13 +210,11 @@
                     stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    class="text-orange-500"
-                  >
+                    class="text-orange-500">
                     <path d="M15 3h6v6" />
                     <path d="M10 14 21 3" />
                     <path
-                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-                    />
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
                   </svg>
                 </h1>
                 <p class="text-[13px]">
@@ -86,16 +228,13 @@
               </div>
             </div>
             <div
-              class="rounded-3xl border-black shadow-lg bg-amber-200 py-[1vh]"
-            >
+              class="rounded-3xl border-black shadow-lg bg-amber-200 py-[1vh]">
               <img
                 class="rounded-t-3xl"
                 src="./public/imagas/mockup_2_dashboard_screen.png"
-                alt=""
-              />
+                alt />
               <div
-                class="bg-[#f3f4f6] rounded-b-2xl pb-[2rem] pt-[3rem] px-[1rem]"
-              >
+                class="bg-[#f3f4f6] rounded-b-2xl pb-[2rem] pt-[3rem] px-[1rem]">
                 <h1 class="flex items-center gap-3 font-bold">
                   BoardInsight Lahore
                   <svg
@@ -108,13 +247,11 @@
                     stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    class="text-orange-500"
-                  >
+                    class="text-orange-500">
                     <path d="M15 3h6v6" />
                     <path d="M10 14 21 3" />
                     <path
-                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-                    />
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
                   </svg>
                 </h1>
                 <p class="text-[13px]">
@@ -127,16 +264,13 @@
               </div>
             </div>
             <div
-              class="rounded-3xl border-black shadow-lg bg-amber-200 py-[1vh]"
-            >
+              class="rounded-3xl border-black shadow-lg bg-amber-200 py-[1vh]">
               <img
                 class="rounded-t-3xl"
                 src="./public/imagas/mockup_3_tilted_phone.png"
-                alt=""
-              />
+                alt />
               <div
-                class="bg-[#f3f4f6] rounded-b-2xl pb-[2rem] pt-[1rem] px-[1rem]"
-              >
+                class="bg-[#f3f4f6] rounded-b-2xl pb-[2rem] pt-[1rem] px-[1rem]">
                 <h1 class="flex items-center gap-3 font-bold">
                   PGS Learning App
                   <svg
@@ -149,13 +283,11 @@
                     stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    class="text-orange-500"
-                  >
+                    class="text-orange-500">
                     <path d="M15 3h6v6" />
                     <path d="M10 14 21 3" />
                     <path
-                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-                    />
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
                   </svg>
                 </h1>
                 <p class="text-[13px]">
@@ -175,11 +307,11 @@
         <div>
           <p class="font-black text-2xl">Experience</p>
         </div>
-        <div class="flex justify-between gap-[3rem] flex-col lg:flex-row px-[2rem] lg:px-[3rem]">
+        <div
+          class="flex justify-between gap-[3rem] flex-col lg:flex-row px-[2rem] lg:px-[3rem]">
           <div class="flex items-center gap-[1rem]">
             <div
-              class="flex justify-center items-center rounded-full bg-[#f4ede7] w-[5rem] h-[5rem]"
-            >
+              class="flex justify-center items-center rounded-full bg-[#f4ede7] w-[5rem] h-[5rem]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="40"
@@ -189,13 +321,12 @@
                 stroke="currentColor"
                 stroke-width="2"
                 stroke-linecap="round"
-                stroke-linejoin="round"
-              >
+                stroke-linejoin="round">
                 <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
                 <rect width="20" height="14" x="2" y="6" rx="2" />
               </svg>
             </div>
-            <div class="">
+            <div class>
               <p class="text-orange-500 font-medium">2024-Present</p>
               <h1 class="font-bold">Web Developer</h1>
               <p class="text-orange-500 font-medium">CodeWingz</p>
@@ -207,8 +338,7 @@
           </div>
           <div class="flex items-center gap-[1rem]">
             <div
-              class="flex justify-center items-center rounded-full bg-[#f4ede7] w-[5rem] h-[5rem]"
-            >
+              class="flex justify-center items-center rounded-full bg-[#f4ede7] w-[5rem] h-[5rem]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="40"
@@ -218,11 +348,9 @@
                 stroke="currentColor"
                 stroke-width="2"
                 stroke-linecap="round"
-                stroke-linejoin="round"
-              >
+                stroke-linejoin="round">
                 <path
-                  d="M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0H4m16 0 1.28 2.55a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45L4 16"
-                />
+                  d="M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0H4m16 0 1.28 2.55a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45L4 16" />
                 <path d="m10 9-2 2 2 2" />
                 <path d="m14 9 2 2-2 2" />
               </svg>
@@ -238,8 +366,7 @@
           </div>
           <div class="flex items-center gap-[1rem]">
             <div
-              class="flex justify-center items-center rounded-full bg-[#f4ede7] w-[5rem] h-[5rem]"
-            >
+              class="flex justify-center items-center rounded-full bg-[#f4ede7] w-[5rem] h-[5rem]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="40"
@@ -249,8 +376,7 @@
                 stroke="currentColor"
                 stroke-width="2"
                 stroke-linecap="round"
-                stroke-linejoin="round"
-              >
+                stroke-linejoin="round">
                 <circle cx="12" cy="8" r="5" />
                 <path d="M20 21a8 8 0 0 0-16 0" />
               </svg>
